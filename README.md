@@ -51,6 +51,10 @@ If you want to deploy this app on AWS EC2, follow these steps:
 - Add Security Group Rules:
     - Port 22 (SSH) → Open for your IP
     - Port 80 (HTTP) → Open to public (0.0.0.0/0)
+** SSH into Your EC2 Instance**
+```bash
+ssh -i ~/Downloads/ec2-key.pem ec2-user@<your-ec2-ip>
+```
 ### 2️⃣ Install Docker on EC2
 ```bash
 sudo yum update -y
@@ -60,8 +64,8 @@ sudo systemctl enable docker
 ```
 ### 3️⃣ Pull and Run the Docker Container
 ```bash
-docker pull your_docker_username/travel_app
-docker run -d -p 80:3000 your_docker_username/travel_app
+docker pull sameerasineen85/travel_app
+docker run -d -p 80:3000 sameerasineen85/travel_app
 ```
 ### 4️⃣ Attach an Elastic IP (Optional but Recommended)
 - Go to AWS EC2 Console → Elastic IPs
