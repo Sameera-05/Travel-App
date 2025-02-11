@@ -25,11 +25,11 @@ You can run this application using **Docker** in just a few steps:
 
 ### **1️⃣ Pull the Docker Image**
 ```bash
-docker pull your_docker_username/travel_app
+docker pull sameerasineen85/travel_app
 ```
 ### **2️⃣ Run the Docker Container**
 ```bash
-docker run -d -p 3000:3000 your_docker_username/travel_app
+docker run -d -p 3000:3000 sameerasineen85/travel_app
 ```
 ### 3️⃣ Open the Application
 Visit 👉 http://localhost:3000 in your browser.
